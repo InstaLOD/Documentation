@@ -1,4 +1,4 @@
-<div style="text-align:center;"><img src="http://files.instalod.io/Web/InstaLOD_Logo_Square_BW_400x280.png" alt="InstaLOD logo" /></div>
+![InstaLOD Logo](http://files.instalod.io/Web/InstaLOD_Logo_Square_BW_400x280.png)
 
 # InstaLOD Documentation Repository
 This repository contains all publicly available documentation for [InstaLOD](http://www.InstaLOD.io).
