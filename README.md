@@ -6,7 +6,7 @@ Live versions of the documentation found in this repo can be seen on our website
 
   - [InstaLODCmd](http://www.InstaLOD.io/GettingStartedWithCmd)
   - [InstaLOD for Autodesk Maya](http://www.InstaLOD.io/GettingStartedWithMaya)
-  - [InstaLOD for Autodesk 3ds Max](http://www.InstaLOD.io/GettingStartedWithMax)
+  - [InstaLOD for Autodesk 3ds Max](http://www.InstaLOD.io/GettingStartedWith3dsMax)
   - [InstaLOD for Unreal Engine](http://www.InstaLOD.io/GettingStartedWithUE4)
   - [InstaLOD for Unity](http://www.InstaLOD.io/GettingStartedWithUnity)
 
