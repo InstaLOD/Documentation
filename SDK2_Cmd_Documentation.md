@@ -599,9 +599,9 @@ The `Materials` section of a profile contains all settings relevant to the globa
 | DefaultHeight                                   | `(int)` The default output size for texture pages (internal).     |
 | AutoMatchTexturePages                           | `(bool)` Enables to use automatic texture page configurations.    |
 | AutoMatchTexturePagesForceDefaultOutputSize     | `(bool)` Enables to use default output size for all textures.     |
-| TexturePageExportFormat8Bit                     | `(string)` Output format for 8bit textures (PNG/HDR/EXR16/EXR32). |
-| TexturePageExportFormat16Bit                    | `(string)` Output format for 16bit textures (PNG/HDR/EXR16/EXR32). |
-| TexturePageExportFormat32Bit                    | `(string)` Output format for 32bit textures (PNG/HDR/EXR16/EXR32). |
+| TexturePageExportFormat8Bit                     | `(string)` Output format for 8bit textures (PNG8/PNG8Dithered/PNG16/HDR/EXR16/EXR32). |
+| TexturePageExportFormat16Bit                    | `(string)` Output format for 16bit textures (PNG8/PNG8Dithered/PNG16/HDR/EXR16/EXR32). |
+| TexturePageExportFormat32Bit                    | `(string)` Output format for 32bit textures (PNG8/PNG8Dithered/PNG16/HDR/EXR16/EXR32). |
 | TexturePages                                    | `(array)` Array of TexturePage entries.                           |
 
 Example `Materials` configuration:
@@ -768,6 +768,10 @@ Material and texture related variables are typically available when referencing 
 > 
 > Example: Both `OutputPathFormat` and `MatchMeshByNameSourceRegExFormat` are format strings and therefore allow
 > using built-in variables to construct a string that will be evaluated during runtime.
+
+### Using OS Environment Variables
+Besides supporting InstaLOD Script variable, format strings can also evalute platform specific environment variables. 
+To include an environment variable in a format string, reference the variable by name using the following syntax on all platforms: `${VARIABLE}`. Whenever the string is evaluated by InstaLOD, all environment variables will be evaluated as well.
 
 <a name="instalod-script"></a>
 ## InstaLOD Script
