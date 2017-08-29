@@ -612,9 +612,9 @@ Example `Materials` configuration:
         "DefaultHeight" : 2048,
         "AutoMatchTexturePages" : true,
         "AutoMatchTexturePagesForceDefaultOutputSize" : true,
-        "TexturePageExportFormat8Bit" : "PNG",
-        "TexturePageExportFormat16Bit" : "PNG",
-        "TexturePageExportFormat32Bit" : "PNG",
+        "TexturePageExportFormat8Bit" : "PNG8",
+        "TexturePageExportFormat16Bit" : "PNG16",
+        "TexturePageExportFormat32Bit" : "PNG16",
         "TexturePages" : [ ]
     }
 
