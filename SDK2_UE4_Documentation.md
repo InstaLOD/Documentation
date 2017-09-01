@@ -18,6 +18,9 @@ This page will help you to get up to speed with InstaLOD for Unreal Engine 4 in 
 	- [Preparing Unreal Engine 4.14 and later for InstaLOD](#preparing-unreal-engine-414-and-later-for-instalod)
 	- [Preparing Unreal Engine 4.9 - 4.13 for InstaLOD](#preparing-unreal-engine-49---413-for-instalod)
 - [Using InstaLOD for Unreal Engine 4](#using-instalod-for-unreal-engine-4)
+- [Vertex based optimization weights](#vertex-based-optimization-weights)
+	- [Painting vertex colors in Unreal Engine 4](#painting-vertex-colors-in-unreal-engine-4)
+- [Contributing to this document](#contributing-to-this-document)
 - [Website](#website)
 
 <!-- /MarkdownTOC -->
@@ -94,11 +97,39 @@ InstaLOD is fully integrated into Unreal Engine 4 and all LOD features are now a
 This includes hierarchical LOD clusters, mesh merging and the generation of static mesh and skeletal mesh LOD.
 To perform draw-call reduction manually select the `Merge Actor` from the `Developer Tools` menu.
 
-Additional help is available by clicking the InstaLOD button in the static mesh editor or the skeletal mesh editor toolbar.
+<a name="vertex-based-optimization-weights"></a>
+## Vertex based optimization weights
+InstaLOD supports vertex color based optimization weights. This is a great way to give artists full control over the optimization.
+
+  - Vertex Pinning, use the blue vertex color channel to mark vertices as important. Values between [0...1] will increase the weight of the vertex. A value of 1 marks the vertex as pinned and therefore not as collapsible.
+  - Vertex Cullable Detail, use the red vertex color channel to mark vertices as cullable detail. Values between [0...1] will decrease the weight of the vertex. A value of 0 means the vertex will be culled as early as possible.
+
+InstaLOD will only accept vertex color channels that have an empty green channel.
+Avoid using both RED and BLUE for a single vertex. If both RED and BLUE colors are used on the same vertex the high color value will determine the weighting type. It is recommended to use pinning instead of culling, to avoid interfering with the optimization strategy of the optimizer.
+To enable vertex based optimization weights, set `Silhouette` to `High` or enable the `InstaLOD.ForceOptimizerWeights` cvar.
+
+> InstaLOD normally supports up to four vertex color channels and a dedicated mesh attribute for optimization weights.
+> If you're running your project on a custom engine fork and you need to store other data in the vertex color channel, 
+> you can make use of the additional fields provided by InstaLOD by modifing the `FRawMesh` conversion methods found in the `FInstaLOD` class.  
+
+<a name="painting-vertex-colors-in-unreal-engine-4"></a>
+### Painting vertex colors in Unreal Engine 4
+Vertex colors are typically painted onto vertices during the model's creation in a DCC tool like Autodesk Maya.
+However, vertex colors can also be painted directly on a mesh from inside Unreal Engine 4.
+To paint vertex colors from inside UE4 drag a model into the viewport of your level.
+Switch into paint mode by pressing `Shift+F2` and paint your desired vertex colors.
+Once you are finished painting press the `Copy instance colors to source mesh` button to commit the vertex colors to your mesh.
+Open the mesh in the static mesh editor, verify that the vertex colors have been updated using the `Vert Colors` view mode and press `Save.
+
 
 <img src="http://files.InstaLOD.io/Web/instalod_ue4_staticmesh_lod.png" width="100%" >
 
 To get more information on how to use UE4's built-in LOD capabilities, please refer to the UE4 online documentation available at: http://www.InstaLOD.io/ue4documentation
+
+<a name="contributing-to-this-document"></a>
+## Contributing to this document
+The InstaLOD documentation efforts are open-sourced and we welcome third-party contributions. 
+Feel free to contribute to our documentation by submitting pull-requests to our [documentation repository on GitHub](https://github.com/InstaLOD/Documentation).
 
 <a name="website"></a>
 ## Website
