@@ -94,8 +94,13 @@ The `Merge Actor` feature can be enabled under the `Experimental`-Settings in th
 <a name="using-instalod-for-unreal-engine-4"></a>
 ## Using InstaLOD for Unreal Engine 4
 InstaLOD is fully integrated into Unreal Engine 4 and all LOD features are now available to you.
-This includes hierarchical LOD clusters, mesh merging and the generation of static mesh and skeletal mesh LOD.
-To perform draw-call reduction manually select the `Merge Actor` from the `Developer Tools` menu.
+This includes hierarchical LOD clusters, remeshing and the generation of static mesh and skeletal mesh LOD.
+To perform remeshing outside of the HLOD feature, select the `Merge Actor` from the `Developer Tools` menu.
+
+To get more information on how to use Unreal Engine's user interface to create LOD, please refer to the UE4 online documentation available at: http://www.InstaLOD.io/ue4documentation.
+
+<img src="http://files.InstaLOD.io/Web/instalod_ue4_staticmesh_lod.png" width="100%" >
+
 
 <a name="vertex-based-optimization-weights"></a>
 ## Vertex based optimization weights
@@ -120,11 +125,6 @@ To paint vertex colors from inside UE4 drag a model into the viewport of your le
 Switch into paint mode by pressing `Shift+F2` and paint your desired vertex colors.
 Once you are finished painting press the `Copy instance colors to source mesh` button to commit the vertex colors to your mesh.
 Open the mesh in the static mesh editor, verify that the vertex colors have been updated using the `Vert Colors` view mode and press `Save.
-
-
-<img src="http://files.InstaLOD.io/Web/instalod_ue4_staticmesh_lod.png" width="100%" >
-
-To get more information on how to use UE4's built-in LOD capabilities, please refer to the UE4 online documentation available at: http://www.InstaLOD.io/ue4documentation
 
 <a name="contributing-to-this-document"></a>
 ## Contributing to this document
