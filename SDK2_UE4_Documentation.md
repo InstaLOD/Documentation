@@ -52,7 +52,7 @@ The next time you will open your UE4 project the InstaLOD plugin will be compile
 
 ### Installing InstaLOD for Unreal Engine 4.17
 Due to a bug in Unreal Engine 4.17 a prompt appears when starting the engine for the first time after installing InstaLOD for Unreal Engine.
-The prompt asks the user to disable the plugin due to incompatibilities, this is not correct and the dialog is a result of a bug inside the engine. To proceed, simply click 'No' when asked to disable the `InstaLODMeshReduction` plugin.
+The prompt asks the user to disable the plugin due to incompatibilities, this is not correct and the dialog is the result of a bug within the engine. To proceed, simply click 'No' when asked to disable the `InstaLODMeshReduction` plugin.
 More information on bug [UE-49007](https://issues.unrealengine.com/issue/UE-49007) is available [here](https://issues.unrealengine.com/issue/UE-49007).
 
 <a name="updating-from-a-previous-version-of-instalod-for-unreal-engine-4"></a>
