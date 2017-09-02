@@ -47,8 +47,13 @@ If you cannot find the `Plugins` folder in the root of your Unreal Engine projec
 Finally, right click on your project file `projectname.uproject` and depending on your operating system select either `Generate Xcode project` (MacOS) or `Generate Visual Studio project files` (Windows).
 The next time you will open your UE4 project the InstaLOD plugin will be compiled.
 
-> If you are not using a custom fork of Unreal Engine 4, it important to install InstaLOD to your project's plugins folder, 
+> If you are not using a custom fork of Unreal Engine 4, it is recommended to install InstaLOD to your project's plugins folder, 
 > not into the engine's plugins folder.
+
+### Installing InstaLOD for Unreal Engine 4.17
+Due to a bug in Unreal Engine 4.17 a prompt appears when starting the engine for the first time after installing InstaLOD for Unreal Engine.
+The prompt asks the user to disable the plugin due to incompatibilities, this is not correct and the dialog is a result of a bug inside the engine. To proceed, simply click 'No' when asked to disable the `InstaLODMeshReduction` plugin.
+More information on bug [UE-49007](https://issues.unrealengine.com/issue/UE-49007) is available [here](https://issues.unrealengine.com/issue/UE-49007).
 
 <a name="updating-from-a-previous-version-of-instalod-for-unreal-engine-4"></a>
 ## Updating from a previous version of InstaLOD for Unreal Engine 4
