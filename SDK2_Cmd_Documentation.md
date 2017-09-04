@@ -96,7 +96,8 @@ Before InstaLODCmd can be used your workstation needs to be authorized. To autho
 Your workstation is now authorized for use with InstaLOD. Make sure to deauthorize your workstation before uninstalling InstaLOD or you will not be able to authorize another workstation.
 
 > Machine authorization for InstaLOD is system wide. If you've already been using InstaLOD on your computer,
-> there is no need to authorize your machine for InstaLODCmd.
+> there is no need to authorize your machine for InstaLODCmd. 
+> Make sure to deauthorize your workstation prior to uninstalling InstaLOD, or the seat/node will remain locked.
 
 <a name="machine-deauthorization"></a>
 ### Machine Deauthorization
@@ -410,9 +411,9 @@ InstaLOD's powerful UV functionality can also be used outside of any optimizatio
 ### UV Unwrap
 The UV Unwrap template can be found at `Profiles/UVUnwrap.json`.
 InstaLOD UV unwrapper features three distinct algorithms that each have their strengths on different kinds of input meshes.
-`StretchBased` works great for organic meshes while `BestPlane` and `AngleBased` are better suited for hard-surface/constructed type meshes. 
+`Organic` works great for organic meshes while `HardSurfaceAxial` and `HardSurfaceAngle` are better suited for hard-surface/constructed type meshes. 
 
-The bundled UV Unwrap profile is configured to use the `BestPlane` algorithm as the couch model used in this example
+The bundled UV Unwrap profile is configured to use the `HardSurfaceAxial` algorithm as the couch model used in this example
 is a hard-surface type
  mesh.
 
@@ -446,6 +447,8 @@ Enable `MatchMeshByName` to match source meshes to target meshes by name. This a
 Meshes matching the suffix configured in the field `MatchMeshByNameTargetSuffix` will be considered as target mesh.
 The suffix will be truncated and the resulting string will form the mesh name that is used to identify matching meshes.
 Meshes matching the regular expression (ECMA, ignore-case) configured in the field `MatchMeshByNameSourceRegExFormat` will be used as source mesh.
+
+All source meshes that do not match the source mesh regular expression will be baked onto every target mesh in the scene.
 
 > Example 1: `hood_rail_low` -> matches suffix `_low` as configured in the field `MatchMeshByNameTargetSuffix` ->
 > resulting mesh name `hood_rail` ->
@@ -630,6 +633,10 @@ In order to avoid overwriting the same file for each texture InstaLOD built-in s
 Refer to the chapter [Format strings with InstaLOD Script variables](#format-strings-with-instalod-script-variables) for an overview over all available variables. 
 By default, internally generated textures will be created using the size as configured in the fields `DefaultWidth` and `DefaultHeight`.
 Externally loaded textures will use the input texture size as output texture size. However, the output size for both internal and external textures can be manually configured using texture page configurations.
+
+> InstaLOD supports high quality texture downsampling and dithering that minimizes banding artefacts when downsampling to lower bit depths.
+> This is especially useful when downsampling InstaLOD's 16bit normal maps for a rendering engine that only supports 8bit texture data.
+> To output 16bit textures as 8bit dithered textures, simply set the field `TexturePageExportFormat16Bit` to `PNG8Dithered`.
 
 <a name="automatic-texture-page-configurations"></a>
 ### Automatic Texture Page Configurations
