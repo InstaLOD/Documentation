@@ -1,4 +1,4 @@
-<img src="http://files.InstaLOD.io/Web/1280x720_InstaLODUE4Header.png" width="100%">
+<img src="http://files.InstaLOD.io/Web/1280x720_InstaLODUE4Header.png">
 
 This page will help you to get up to speed with InstaLOD for Unreal Engine 4 in minutes.
 
@@ -75,7 +75,7 @@ Your workstation needs to be authorized before InstaLOD for Unreal Engine can be
 To deauthorize your workstation before uninstalling InstaLOD for Unreal Engine, open the InstaLOD help dialog by clicking the InstaLOD icon in the toolbar of either the static mesh editor or the skeletal mesh editor (Persona).
 A window will appear that contains information about InstaLOD, scroll down to the bottom and click the `DEAUTHORIZE MACHINE AND REMOVE LICENSE` link. The authorization dialog will appear asking you to enter your license information. Press `Deauthorize` to remove deauthorize your workstation. Unreal Engine will shut down after the workstation has been deauthorized. You can now uninstall InstaLOD for Unreal Engine.
 
-<img src="http://files.InstaLOD.io/Web/instalod_ue4_deauthorize.png" width="100%">
+<img src="http://files.InstaLOD.io/Web/instalod_ue4_deauthorize.png">
 
 <a name="setting-up-unreal-engine-for-instalod"></a>
 ## Setting up Unreal Engine for InstaLOD
@@ -88,7 +88,7 @@ Open the Main Window of Unreal Engine 4 and click the `Settings` button in the m
 Select `Project Settings...` to open the project specific settings. 
 In the left side of the project settings dialog, scroll down until the `Editor` category becomes fully visible and select `Mesh Simplification`.
 
-<img src="http://files.InstaLOD.io/Web/1000x584_ue4_plugin_setup.png" width="100%">
+<img src="http://files.InstaLOD.io/Web/1000x584_ue4_plugin_setup.png">
 
 <a name="preparing-unreal-engine-49---413-for-instalod"></a>
 ### Preparing Unreal Engine 4.9 - 4.13 for InstaLOD
@@ -104,7 +104,7 @@ To perform remeshing outside of the HLOD feature, select the `Merge Actor` from 
 
 To get more information on how to use Unreal Engine's user interface to create LOD, please refer to the UE4 online documentation available at: http://www.InstaLOD.io/ue4documentation.
 
-<img src="http://files.InstaLOD.io/Web/instalod_ue4_staticmesh_lod.png" width="100%" >
+<img src="http://files.InstaLOD.io/Web/instalod_ue4_staticmesh_lod.png" >
 
 
 <a name="vertex-based-optimization-weights"></a>
