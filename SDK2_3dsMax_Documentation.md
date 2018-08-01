@@ -1,4 +1,4 @@
-<img src="http://files.InstaLOD.io/Web/1280x720_InstaLOD3dsMaxSDK2Header.png" width="100%" alt="image">
+<img src="http://files.InstaLOD.io/Web/1280x720_InstaLOD3dsMaxSDK2Header.png" alt="image">
 
 This page will help you to get up to speed with InstaLOD for Autodesk 3ds Max SDK 2.
 
@@ -15,7 +15,7 @@ Great care has been taken to ensure a high degree of usability and productivity 
 > Teams using InstaLOD SDK 2 Update 2 have the option of getting a private instruction session via Skype video.
 > Please [get in touch with us](http://www.InstaLOD.io/Contact) to schedule your session. 
 
-<img src="http://files.InstaLOD.io/Web/1280x720_SDK2.png" width="100%" alt="image">
+<img src="http://files.InstaLOD.io/Web/1280x720_SDK2.png" alt="image">
 
 ## Table of Contents
 
@@ -69,7 +69,7 @@ The script will automatically create the InstaLOD menu item, that can be used to
 
 If the InstaLOD window has been closed, it can be spawned again by selecting `InstaLOD->Open Window...` from 3ds Max's main menu.
 
-<img src="http://files.InstaLOD.io/Web/1280x720_3dsMaxSetup.png" width="100%" alt="image">
+<img src="http://files.InstaLOD.io/Web/1280x720_3dsMaxSetup.png" alt="image">
 
 On the first start of InstaLOD, it is necessary to point InstaLOD for 3ds Max to the installation directory of InstaLODCmd. 
 Click the `Browse...`-button and browse to the InstaLODCmd installation directory on your workstation.
@@ -91,7 +91,7 @@ Click the `Optimize Selected Meshes` button to optimize the mesh. 3ds Max will e
 Once the geometry has been exported InstaLOD will execute the mesh operation asynchronously.
 
 Both skeletal and static meshes are supported by InstaLOD for 3ds Max. 
-<img src="http://files.InstaLOD.io/Web/1280x720_3dsMax.png" width="100%" alt="image">
+<img src="http://files.InstaLOD.io/Web/1280x720_3dsMax.png" alt="image">
 The image above shows the UI of InstaLOD for Autodesk 3ds Max docked to the right side of the window. The InstaLOD window can be docked and undocked like other native 3ds Max windows. 
 
 <a name="optimizing-multiple-meshes"></a>
@@ -105,7 +105,7 @@ Global optimization is enabled by default, but can be disabled by unchecking the
 Optimizing multiple meshes works identical to the optimization of a single mesh. 
 Select all meshes to be optimized in the viewport or hierarchy, enter the optimization target value and click the `Optimize Selected Meshes` button to optimize all currently selected and visible meshes.
 
-<img src="http://files.InstaLOD.io/Web/1280x720_GlobalOptimization.png" width="100%" alt="image"><a name="creating-batch-operations"></a>
+<img src="http://files.InstaLOD.io/Web/1280x720_GlobalOptimization.png" alt="image"><a name="creating-batch-operations"></a>
 ## Creating batch operations
 
 By right-clicking on the mesh operation execution button and selecting `Save as Batch-Profile...` the current mesh operation settings will be saved as batch profile inside the directory of your InstaLODCmd installation. On the `Batch`-tab one saved profiles can be selected and executed on the current mesh selection in parallel. This is a great way to create a complete LOD chain with a single click.
