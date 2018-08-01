@@ -1,4 +1,4 @@
-<img src="http://files.InstaLOD.io/Web/1280x720_InstaLODMayaSDK2Header.png" width="100%">
+<img src="http://files.InstaLOD.io/Web/1280x720_InstaLODMayaSDK2Header.png">
 
 This page will help you to get up to speed with InstaLOD for Autodesk Maya SDK 2.
 
@@ -15,7 +15,7 @@ Great care has been taken to ensure a high degree of usability and productivity 
 > Teams using InstaLOD SDK 2 Update 2 have the option of getting a private instruction session via Skype video.
 > Please [get in touch with us](http://www.InstaLOD.io/Contact) to schedule your session. 
 
-<img src="http://files.InstaLOD.io/Web/1280x720_SDK2.png" width="100%">
+<img src="http://files.InstaLOD.io/Web/1280x720_SDK2.png">
 
 
 ## Table of Contents
@@ -112,7 +112,7 @@ More information on how to run MEL commands whenever Maya starts up is available
 
 If the InstaLOD window has been closed, it can be spawned again by selecting `InstaLOD->Open Window...` from Maya's main menu.
 
-<img src="http://files.InstaLOD.io/Web/1280x720_MayaSetup.png" width="100%">
+<img src="http://files.InstaLOD.io/Web/1280x720_MayaSetup.png">
 
 On the first start of InstaLOD, it is necessary to point InstaLOD for Maya to the installation directory of InstaLODCmd. 
 Click the `Browse...`-button and browse to the InstaLODCmd installation directory on your workstation.
@@ -134,7 +134,7 @@ Click the `Optimize Selected Meshes` button to optimize the mesh. Maya will expo
 Once the geometry has been exported InstaLOD will execute the mesh operation asynchronously.
 
 Both skeletal and static meshes are supported by InstaLOD for Maya. 
-<img src="http://files.InstaLOD.io/Web/1280x720_Maya.png" width="100%">
+<img src="http://files.InstaLOD.io/Web/1280x720_Maya.png">
 The image above shows the UI of InstaLOD for Autodesk Maya docked to the right side of the window. The InstaLOD window can be docked and undocked like other native Maya windows. 
 
 <a name="optimizing-multiple-meshes"></a>
@@ -148,7 +148,7 @@ Global optimization is enabled by default, but can be disabled by unchecking the
 Optimizing multiple meshes works identical to the optimization of a single mesh. 
 Select all meshes to be optimized in the viewport or hierarchy, enter the optimization target value and click the `Optimize Selected Meshes` button to optimize all currently selected and visible meshes.
 
-<img src="http://files.InstaLOD.io/Web/1280x720_GlobalOptimization.png" width="100%">
+<img src="http://files.InstaLOD.io/Web/1280x720_GlobalOptimization.png">
 
 <a name="creating-batch-operations"></a>
 ## Creating batch operations
