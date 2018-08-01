@@ -1,4 +1,4 @@
-<img src="http://files.InstaLOD.io/Web/1280x720_InstaLODUnityHeader.png" width="100%">
+<img src="http://files.InstaLOD.io/Web/1280x720_InstaLODUnityHeader.png">
 
 This page will help you to get up to speed with InstaLOD for Unity in minutes.
 
