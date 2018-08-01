@@ -1,4 +1,4 @@
-<img src="http://files.InstaLOD.io/Web/1280x720_InstaLODSDK2Header.png" width="100%">
+<img src="http://files.InstaLOD.io/Web/1280x720_InstaLODSDK2Header.png">
 
 This page will help you to get up to speed with InstaLOD SDK 2.
 
@@ -11,7 +11,7 @@ Integrating our SDK is a straight forward and fun task. There are no external de
 great care has been taken to create a modern and clean API with little in your way to creating complex optimizations.
 
 
-<img src="http://files.InstaLOD.io/Web/1280x720_SDK2.png" width="100%">
+<img src="http://files.InstaLOD.io/Web/1280x720_SDK2.png">
 
 ## Table of Contents
 
