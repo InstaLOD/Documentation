@@ -1,5 +1,5 @@
 
-<img src="http://files.InstaLOD.io/Web/1280x720_InstaLODCmdSDK2Header.png" width="100%">
+<img src="http://files.InstaLOD.io/Web/1280x720_InstaLODCmdSDK2Header.png">
 
 This page will help you to get up to speed with InstaLODCmd SDK2 in just a few minutes.
 
@@ -10,7 +10,7 @@ InstaLODCmd is a cross-platform console application that enables you to perform 
 
 > InstaLODCmd also forms the optimization backend for InstaLOD for Autodesk Maya and InstaLOD for Autodesk 3ds Max.
 
-<img src="http://files.InstaLOD.io/Web/1280x720_SDK2.png" width="100%">
+<img src="http://files.InstaLOD.io/Web/1280x720_SDK2.png">
 
 ## Table of Contents
 <!-- MarkdownTOC depth=3 autoanchor=true autolink=true bracket='round' -->
@@ -183,7 +183,7 @@ Working with the InstaLOD DCC integrations to configure and export profiles is o
 Polygon Optimization is the process of removing polygons until the polygon count of the mesh matches the target value. InstaLOD is able to optimize meshes with multiple millions of polygons while maintaining vertex attributes like normals, texture coordinates and colors. Artists can influence the optimization by using vertex colors to mark vertices for preservation or for early removal. When optimizing skinned meshes, InstaLOD will automatically try to preserve polygons around areas critical for the animation. Additionally, InstaLOD features built-in skeleton rig optimization to reduce the amount of bones or vertex weights required to animate the model.
 InstaLOD's Smart Optimizer mode aims to produce the best result on a variety of mesh topologies without requiring any additional configuration. 
 
-<img src="http://files.InstaLOD.io/Web/1280x720_Optimize.png" width="100%">
+<img src="http://files.InstaLOD.io/Web/1280x720_Optimize.png">
 
 The polygon optimization profile template can be found at `Profiles/Optimize.json`. The bundled optimization profile creates a LOD chain with 4 entries at 100%, 50%, 25% and 10% triangles of the input mesh.
 
@@ -223,7 +223,7 @@ With features like `Automatic Occlusion Geometry` even non-manifold input meshes
 > InstaLOD's remeshing is both powerful and fast. Therefore, it is highly recommended to watch the tutorial videos that cover
 > the remeshing specific features and setting in detail. 
 
-<img src="http://files.InstaLOD.io/Web/1280x720_Remeshing.png" width="100%">
+<img src="http://files.InstaLOD.io/Web/1280x720_Remeshing.png">
 
 The remeshing profile template can be found at `Profiles/Remesh.json`. The bundled remeshing profile remeshes the input file at `Normal` resolution using a fuzzy face count target of `Normal`. Using the fuzzy face count target is a great way to create real-time ready assets without specifying a target polygon count that needs to be updated for each mesh. When using a fuzzy face count target, InstaLOD chooses an appropriate target face count based on the remeshing resolution, the input mesh face count, the input mesh complexity and it's bounding box size.
 
@@ -340,7 +340,7 @@ High quality solidification, super-sampling and full control over UV-shell rotat
 InstaLOD supports merging materials of both static and skinned models or a combination of both.
 Handling large scenes with multiple millions of polygons and over-sized 30k textures is no problem for InstaLOD. 
 
-<img src="http://files.InstaLOD.io/Web/1280x720_MaterialMerge.png" width="100%">
+<img src="http://files.InstaLOD.io/Web/1280x720_MaterialMerge.png">
 
 The mesh material merge profile template can be found at `Profiles/MaterialMerge.json`. 
 The bundled mesh material merge profile creates a 2048x2048 output texture using x2 super-sampling.
@@ -362,7 +362,7 @@ Additionally, InstaLOD supports automatically removing interior faces as a zero-
 As a zero-configuration solution to removing interior geometry the automatic interior culling mode can be used.
 Depending on the complexity and density of the input mesh the fields `Resolution`, `AutomaticPrecision` and `AdjacencyDepth` can be increased at the cost of processing time.
 
-<img src="http://files.InstaLOD.io/Web/1280x720_OcclusionCulling_Automatic.png" width="100%">
+<img src="http://files.InstaLOD.io/Web/1280x720_OcclusionCulling_Automatic.png">
 
 The occlusion culling profile template can be found at `Profiles/OcclusionCullAutomatic.json`.
 
@@ -375,7 +375,7 @@ Both perspective and orthogonal cameras found in the input file will be used for
 In order to better comprehend the view of the camera used for the operation InstaLOD supports writing ray traced image output to disk.
 To enabled image rendering simply set `RenderOutputPath` to a valid path.
 
-<img src="http://files.InstaLOD.io/Web/1280x720_OcclusionCulling_Camera.png" width="100%">
+<img src="http://files.InstaLOD.io/Web/1280x720_OcclusionCulling_Camera.png">
 
 The occlusion culling profile template can be found at `Profiles/OcclusionCullCamera.json`. 
 The bundled occlusion culling profile uses a custom camera to remove occluded faces and writes camera output to the `Build/` folder.  
@@ -390,7 +390,7 @@ By setting the field `DataUsage` to `WriteOptimizerWeightsToWedgeColors` InstaLO
 In order to use the output of one operation as input for another operation in the same profile set the `UsePreviousOutputAsInput` field to `true`.
 This functionality enables the mesh optimization operation to use the optimizer weights generated by the occlusion cull operation to further optimize the mesh.
 
-<img src="http://files.InstaLOD.io/Web/1280x720_VisibilityOptimize.png" width="100%">
+<img src="http://files.InstaLOD.io/Web/1280x720_VisibilityOptimize.png">
 In the image above, a character model has been reduced to 25% of the initial face count using visibility based mesh optimization.
 A camera has been placed that captures only the shoulders and the head of the model (bright edges).
 The optimized mesh topology that is visible by the camera that was used to perform the occlusion culling remains unchanged.
@@ -525,7 +525,7 @@ This gives artists precise control over the bake and helps to resolve bakes that
 However, baking cages become especially helpful once `CageMeshNormalsAsRayDirections` is enabled.
 Using the cage mesh's normals as ray directions enables artists to bake beautiful bevels and orthogonal decals onto a fully averaged surface (or bent normals on a surface with face normals). Therefore it is not necessary to insert edges and polygons in the target mesh, that would normally only serve the purpose to force a specific vertex normal orientation.
 
-<img src="http://files.InstaLOD.io/Web/1280x720_BakingCages.png" width="100%">
+<img src="http://files.InstaLOD.io/Web/1280x720_BakingCages.png">
 
 The following example helps to better illustrate the benefits of using cages. The target mesh `cube_low` is a simple cube, stretched along one axis.
 In order to avoid the "puffy surfaces" issue, the normals of the target have been averaged. 
@@ -569,7 +569,7 @@ InstaLOD ships with two template profiles that make use of mesh operation chains
 
 The visibility based mesh optimization is described in detail in the dedicated [Visibility Based Mesh Optimization](#visibility-based-mesh-optimization) chapter.
 
-<img src="http://files.InstaLOD.io/Web/1280x720_ComplexMeshOperation.png" width="100%">
+<img src="http://files.InstaLOD.io/Web/1280x720_ComplexMeshOperation.png">
 
 The second and more complex example can be found at `Profiles/ComplexPolyRemesh.json`.
 It performs a custom polygon-based remeshing using four different mesh operations:
@@ -592,7 +592,7 @@ InstaLOD uses `Texture Pages` to configure output texture specifications like te
 At the same time texture pages are used to determine the input and output type for individual input textures and 
 to which output texture it's contents belong.
 
-<img src="http://files.InstaLOD.io/Web/1280x720_MaterialTexturePages.png" width="100%">
+<img src="http://files.InstaLOD.io/Web/1280x720_MaterialTexturePages.png">
 
 > Texture page rules have to be established in order for InstaLOD to understand the semantic of an input texture.
 > Texture pages with identical names will be written to a single output texture. 
